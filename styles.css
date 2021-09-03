@@ -244,6 +244,9 @@ img{
          flex-direction: column;
         
      }
+     img{
+         margin-top:2rem
+     }
      
     .main{
       
