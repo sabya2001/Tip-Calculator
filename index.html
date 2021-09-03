@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      margin-top:200px;
+      text-align: center;
+      color:hsl(172, 67%, 45%);
+      font-family: 'Space Mono', monospace;
+    font-size: 12px;
+    font-weight: 700;
+    }
+
+    .attribution a {
+      color:hsl(183, 100%, 15%);;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="main">
+    <div class="main-panel">
+      <span>
+        <p class="names"> Bill</p>
+        <form action="#" class="inputs"><input type="text" class="values1"> </form>
+      </span>
+
+      <p class="names"> Select Tip %</p>
+
+      <div class="tip-choices">
+        <button class="tips"> 5%</button>
+        <button class="tips"> 10%</button>
+        <button class="tips"> 15%</button>
+        <button class="tips"> 25%</button>
+        <button class="tips"> 50%</button>
+        <input type="text" placeholder=" Custom" class="Custom">
+      </div>
+      <span>
+        <p class="names">Number of People</p>
+        <form action="#" class="inputs"><input type="text" class="values2"> </form>
+      </span>
+    </div>
+    <div class="side-panel">
+      <section class="inside">
+        <span>
+          <div class="info"> Tip Amount</div>
+              <p class="p"> / person</p>
+        </span>
+
+
+        <span>
+          <div class="info"> Total</div>
+          <p class="p"> / person</p>
+        </span>
+      </section>
+
+      <button class="reset">RESET</button>
+    </div>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="https://github.com/sabya2001" target="_blank">Sabya</a>.
+  </div>
+</body>
+
+</html>
