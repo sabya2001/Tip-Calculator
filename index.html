@@ -15,21 +15,24 @@
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
     .attribution {
-      margin-top:200px;
+      margin-top: 120px;
       text-align: center;
-      color:hsl(172, 67%, 45%);
+      color: hsl(172, 67%, 45%);
       font-family: 'Space Mono', monospace;
-    font-size: 12px;
-    font-weight: 700;
+      font-size: 12px;
+      font-weight: 700;
     }
 
     .attribution a {
-      color:hsl(183, 100%, 15%);;
+      color: hsl(183, 100%, 15%);
+      ;
     }
   </style>
 </head>
 
 <body>
+  <div class="container">
+    <img src="images/logo.svg" alt="" srcset="">
   <section class="main">
     <div class="main-panel">
       <span>
@@ -42,9 +45,9 @@
       <div class="tip-choices">
         <button class="tips" id="A1"> 5%</button>
         <button class="tips" id="A2"> 10%</button>
-        <button class="tips"id="A3"> 15%</button>
-        <button class="tips"id="A4"> 25%</button>
-        <button class="tips"id="A5"> 50%</button>
+        <button class="tips" id="A3"> 15%</button>
+        <button class="tips" id="A4"> 25%</button>
+        <button class="tips" id="A5"> 50%</button>
         <input type="number" placeholder=" Custom" class="Custom">
       </div>
       <span>
@@ -54,26 +57,34 @@
     </div>
     <div class="side-panel">
       <section class="inside">
-        <span>
-          <div class="info"> Tip Amount</div>
-              <p class="p"> / person</p>
-        </span>
-
-
-        <span>
-          <div class="info"> Total</div>
-          <p class="p"> / person</p>
-        </span>
+        <section id="params">
+          <span id="tp">
+            <div class="info"> Tip Amount</div>
+            <p class="p"> / person</p>
+          </span id="pa">
+          <span>
+            <div class="info"> Total</div>
+            <p class="p"> / person</p>
+          </span>
+        </section>
+        <section id="final-bill"> 
+          <span id="tip-person">$0.00</span>
+          <span id="amount-person">$0.00</span>
+        </section>
       </section>
 
       <button class="reset">RESET</button>
     </div>
   </section>
-  <script src="app.js"></script>
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="https://github.com/sabya2001" target="_blank">Sabya</a>.
-  </div>
+
+ 
+</div>
+ 
+<div class="attribution">
+  Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+  Coded by <a href="https://github.com/sabya2001" target="_blank">Sabya</a>.
+</div>
+<script src="app.js"></script>
 </body>
 
 </html>

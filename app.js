@@ -7,8 +7,10 @@ let tipAmount3 = document.querySelector("#A3");
 let tipAmount4 = document.querySelector("#A4");
 let tipAmount5 = document.querySelector("#A5");
 let count = 1;
-tipAmount1.onclick = () => {
 
+
+tipAmount1.onclick = () => {
+ 
     if (count == 0) {
 
         tipAmount1.style.backgroundColor = "hsl(183, 100%, 15%)";
@@ -18,7 +20,8 @@ tipAmount1.onclick = () => {
         tipAmount1.style.backgroundColor = "hsl(172, 67%, 45%)";
         count = 0;
     }
-    const tAmount = parseInt(tipAmount1.innerText);
+    
+    
 };
 tipAmount2.addEventListener('click', () => {
 
