@@ -87,6 +87,7 @@ img{
     padding:3.4rem 1.7rem;
     box-sizing: border-box;
     border-radius: 0.84rem;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05),0 20px 30px rgba(0,0,0,0.05);
     
     }
     .main-panel{
@@ -102,7 +103,7 @@ img{
     box-sizing:border-box;
     border:none;
     background-color:var(--lightGreyishCyan2);
-    padding:0.08rem;
+    padding:0.08rem 1rem;
     text-align: right;
     width: 15.83rem;
     color:var(--vDarkCyan);
@@ -110,8 +111,48 @@ img{
     font-size:var(--fromInputs);
     margin:0.41rem 0rem;
    font-family: 'Space Mono', monospace;
+   text-decoration: none;
+  }  
+ .values2:focus{
+     outline: none;
+     border:2px solid var(--primary);
+     box-sizing:border-box;
+  }
+  .values1:focus{
+    outline: none;
+    border:2px solid var(--primary);
+    box-sizing:border-box;
+
+  }
+  #error-span{
+      display: flex;
+      justify-content:space-between;
+      flex-direction: row;
+  }
+  .error-msg{
+      font-size: 0.625rem;
+      font-family: 'Space Mono', monospace;
+      font-weight: 700;
+      margin-right:0.8rem;
+      color:indianred;
+      
+  }
+  .no-display{
+      display:none;
+  }
+  .error-msg-class:focus{
+      border:2px solid indianred;
+  }
+ 
+
+
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
   
-}  
+}
 .values1{
  background: url(images/icon-dollar.svg) no-repeat ;
  background-position: 0.41rem;
@@ -150,6 +191,9 @@ img{
     font-weight: 700;
 
 }
+.tips:focus{
+    outline: none;
+}
 .Custom{
    
     width: 5rem;
@@ -163,6 +207,11 @@ img{
     font-size: 1rem;
     font-weight: 700;
     color:var(--primary);
+    box-sizing: border-box;
+}
+.Custom:focus{
+    outline: none;
+    border:2px solid var(--primary);
 }
 .side-panel{
     display: flex;
@@ -214,6 +263,13 @@ img{
     margin-bottom: 0.2rem;
 
 }
+.btn-active{
+    background-color: var(--primary);
+    transition: background-color 150ms ease-in-out;
+}
+.btn-active:hover{
+    background-color: var(--lightGreyishCyan1);
+}
 #params{
     display: flex;
     flex-direction: column;
@@ -231,6 +287,9 @@ img{
     font-size:1.5rem;
     font-weight: 700;
 }
+.reset-button{
+    background-color: var(--darkGreyishCyan1);
+}
 
 @media(max-width:376px)
 {      html{
@@ -247,9 +306,14 @@ img{
      img{
          margin-top:2rem
      }
+     .error-msg{
+        font-size: 0.85rem;
+        margin-top:0.25rem;
+
+     }
      
     .main{
-      
+        border-radius:1.1rem;
         flex-direction: column;
         margin: 0rem;
         margin-top:6rem;
