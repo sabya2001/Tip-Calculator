@@ -267,9 +267,7 @@ input::-webkit-inner-spin-button {
     background-color: var(--primary);
     transition: background-color 150ms ease-in-out;
 }
-.btn-active:hover{
-    background-color: var(--lightGreyishCyan1);
-}
+
 #params{
     display: flex;
     flex-direction: column;
@@ -373,5 +371,8 @@ input::-webkit-inner-spin-button {
 {
     html{
         font-size:24px;
+    }
+    .btn-active:hover{
+        background-color: var(--lightGreyishCyan1);
     }
 }
